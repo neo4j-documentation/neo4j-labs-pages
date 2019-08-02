@@ -1,14 +1,9 @@
 == Halin - Neo4j Monitoring Tool
 :docs: https://moxious.github.io/halin
 
-++++
-<style type="text/css">
-li p,td p {  margin-bottom: 0px; }
-h2,h3,h4 {  margin-top: 2rem; }
-</style>
-++++
+include::header.adoc[]
 
-image::https://halin.graphapp.io/img/halin-icon.png[float=right,width=250]
+image::https://halin.graphapp.io/img/halin-icon.png[float=right,width=200]
 
 Halin is a cluster-enabled monitoring tool for Neo4j, that provides insights into live metrics, queries, configuration and more.
 
@@ -62,5 +57,4 @@ image::https://pbs.twimg.com/media/D8JmM2eWwAMMR4i.jpg[]
 
 * https://medium.com/neo4j/monitoring-neo4j-with-halin-4c11429b46ff[Monitoring Neo4j with Halin	^]
 
-image:https://cdn.neo4jlabs.com/images/beaker.png[link=https://neo4j.com/labs/]
-Powered by https://neo4j.com/labs/s[Neo4j Labs^].
+include::footer.adoc[]

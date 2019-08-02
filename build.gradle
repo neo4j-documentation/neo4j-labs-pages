@@ -1,0 +1,80 @@
+import io.github.httpbuilderng.http.HttpTask
+import groovyx.net.http.HttpBuilder
+
+plugins {
+	id "io.github.http-builder-ng.http-plugin" version "0.1.1"
+    id "org.asciidoctor.convert" version "1.5.9.2"
+}
+asciidoctorj {
+    version = '1.6.1'
+}
+
+group = 'com.neo4j'
+version = '1.0.0'
+archivesBaseName = 'neo4j-labs-pages'
+
+description = """neo4j-labs-pages"""
+
+asciidoctor {
+    sourceDir = file('asciidoc')
+    sources { include '*.adoc' }
+    outputDir = file('build/docs')
+    attributes 'apoc-version' : "3.5.0.4",
+               icons: 'font'
+}
+
+asciidoctor.doLast {
+/*
+    copy {
+        from 'build/docs/html5/index.html'
+        into "build/docs"
+        rename { String filename -> filename.replace("index","index34") }
+    }
+*/
+}
+assemble.dependsOn(asciidoctor)
+
+/*
+def update_wordpress_page(pageId, content) {
+url = 'https://neo4j.com/wp-json/wp/v2/pages/%d' % (pageId)
+auth = b64encode('{}:{}'.format(os.getenv('PUBLISH_DOCS_USERNAME'), os.getenv('PUBLISH_DOCS_PASSWORD')))
+new 
+}
+def update_wordpress_page(pageId, content):
+    url = 'https://neo4j.com/wp-json/wp/v2/pages/%d' % (pageId)
+    auth = b64encode('{}:{}'.format(os.getenv('PUBLISH_DOCS_USERNAME'), os.getenv('PUBLISH_DOCS_PASSWORD')))
+    headers = {
+        'Accept': 'application/json',
+        'Authorization': 'Basic {}'.format(auth),
+    }
+
+    r = requests.get(url, headers=headers)
+    response = json.loads(r.content)
+
+    # build response for update
+    response['content'] = content
+    headers['Content-Type'] = 'application/json'
+    print url
+    pr = requests.post(url, headers=headers, data=json.dumps(response))
+
+    return pr.content
+
+*/
+// https://http-builder-ng.github.io/gradle-http-plugin/asciidoc/html5/
+task notify(type:HttpTask){
+    config {
+        request.uri = 'http://something.com'
+        request.contentType = 'application/json'
+		request.auth.basic {
+		   user = ''
+		   pass = ''
+		}
+    }
+    post {
+        request.uri.path = '/wp-json/wp/v2/pages/'
+        request.body = [event: 'activated']
+        response.success {
+            println 'The event notification was successful'
+        }
+    }
+}

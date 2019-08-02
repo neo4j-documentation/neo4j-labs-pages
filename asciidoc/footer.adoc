@@ -1,0 +1,2 @@
+image:https://cdn.neo4jlabs.com/images/beaker.png[link=https://neo4j.com/labs/]
+Powered by https://neo4j.com/labs/[Neo4j Labs^].

@@ -2,14 +2,9 @@
 :docs: https://grandstack.io/docs
 :!figure-caption:
 
-++++
-<style type="text/css">
-li p,td p {  margin-bottom: 0px; }
-h2,h3,h4 {  margin-top: 2rem; }
-</style>
-++++
+include::header.adoc[]
 
-image::https://grandstack.io/img/GrandStack-Logo-SiteIcon-512x512.png[float=right, width=320, position="top"]
+image::https://grandstack.io/img/GrandStack-Logo-SiteIcon-512x512.png[float=right, width=200, position="top"]
 
 The Neo4j GraphQL integrations for Javascript and the JVM allow you to develop modern API Backends that make best use of your underlying graph based data platform.
 
@@ -71,6 +66,7 @@ image:https://dz2cdn2.dzone.com/storage/rc-covers/6811681-refcard-cover249.jpg[w
 
 
 ++++
+<iframe width="320" height="180" src="https://www.youtube.com/embed/ai-wG7laIsI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="320" height="180" src="https://www.youtube.com/embed/rPC71lUhK_I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="320" height="180" src="https://www.youtube.com/embed/MMg4n68wodo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="320" height="180" src="https://www.youtube.com/embed/AsnXiGQ_Hi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -94,5 +90,4 @@ image:https://dz2cdn2.dzone.com/storage/rc-covers/6811681-refcard-cover249.jpg[w
 * https://blog.grandstack.io/complex-graphql-filtering-with-neo4j-graphql-js-aef19ad06c3e[Complex GraphQL Filtering With neo4j-graphql.js]
 * https://medium.com/free-code-camp/building-the-2018-world-cup-graphql-api-fab40ccecb9e[How we built the 2018 World Cup GraphQL API]
 
-image:https://cdn.neo4jlabs.com/images/beaker.png[link=https://neo4j.com/labs/]
-Powered by https://neo4j.com/labs/s[Neo4j Labs^].
+include::footer.adoc[]
