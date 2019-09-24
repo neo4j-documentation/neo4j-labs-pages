@@ -62,6 +62,8 @@ image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190604
 
 === Recent Articles
 
+* https://www.buzzsprout.com/186154/1640956[Confluent Podcast: Connecting to Apache Kafka with Neo4j]
+* https://www.confluent.io/blog/kafka-graph-visualizations[Confluent Blog: Using Graph Processing for Kafka Stream Visualizations]
 * https://www.confluent.io/blog/kafka-connect-neo4j-sink-plugin[Confluent: All About the Kafka Connect Neo4j Sink Plugin^]
 * https://medium.com/free-code-camp/how-to-embrace-event-driven-graph-analytics-using-neo4j-and-apache-kafka-474c9f405e06[How to embrace event-driven graph analytics using Neo4j and Apache Kafka^]
 * https://medium.com/free-code-camp/how-to-produce-and-consume-data-streams-directly-via-cypher-with-streams-procedures-52cbc5f543f1[How to produce and consume Kafka data streams directly via Cypher with Streams Procedures^]
