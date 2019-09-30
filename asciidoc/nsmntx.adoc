@@ -5,7 +5,7 @@ include::header.adoc[]
 
 image::http://jbarrasa.github.io/neosemantics/docs/img/nsmntx-logo.png[float=right,width=500]
 
-NSMNTX is a plugin that enables the **use of RDF in Neo4j**. [RDF is a W3C standard model](https://www.w3.org/RDF/) for data interchange. 
+NSMNTX is a plugin that enables the **use of RDF in Neo4j**. https://www.w3.org/RDF/[RDF is a W3C standard model] for data interchange. 
 
 You can use it to import existing RDF datasets, build integrations with RDF generating endpoints or easily construct RDF endpoints on Neo4j, and more!
 
