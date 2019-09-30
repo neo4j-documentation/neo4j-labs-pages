@@ -52,10 +52,13 @@ image::http://jbarrasa.github.io/neosemantics/docs/img/nsmntx-block-diagram.png[
 * https://jbarrasa.com/2016/12/16/neo4j-is-your-rdf-store-part-2/[Import/Export RDF into/from Neo4j (II)]
 * https://jbarrasa.com/2018/02/01/neo4j-is-your-rdf-store-part-3-thomson-reuters-openpermid/[Import/Export RDF into/from Neo4j (III)] using https://www.refinitiv.com/en/products/permid-data-management[Refinitiv's PermID] https://permid.org/[public dataset]
 
+
 * https://jbarrasa.com/2018/10/18/quickgraph7-creating-a-schema-org-linked-data-endpoint-on-neo4j-in/[Creating a schema.org endpoint on Neo4j]
+
 
 * https://jbarrasa.com/2016/09/09/quickgraph3-a-step-by-step-example-of-rdf-to-property-graph-transformation/[Step by step example of RDF to Property Graph transformation]
 
-* https://jbarrasa.com/2016/06/07/importing-rdf-data-into-neo4j/ [The logic behind NSMNTX]
+
+* https://jbarrasa.com/2016/06/07/importing-rdf-data-into-neo4j/[The model mapping principles behind NSMNTX]
 
 include::footer.adoc[]
