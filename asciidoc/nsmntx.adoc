@@ -1,9 +1,9 @@
 == NSMNTX - Neo4j RDF & Semantics toolkit
-:docs: http://jbarrasa.github.io/neosemantics/
+:docs: http://neo4j-labs.github.io/neosemantics/
 
 include::header.adoc[]
 
-image::http://jbarrasa.github.io/neosemantics/docs/img/nsmntx-logo.png[float=right,width=500]
+image::http://neo4j-labs.github.io/neosemantics/docs/img/nsmntx-logo.png[float=right,width=500]
 
 NSMNTX is a plugin that enables the **use of RDF in Neo4j**. https://www.w3.org/RDF/[RDF is a W3C standard model] for data interchange. 
 
@@ -24,16 +24,16 @@ There is currently no graph app associated with NSMNTX but we're working on this
 * Ontology Import/Export 
 * Inferencing
 
-image::http://jbarrasa.github.io/neosemantics/docs/img/nsmntx-block-diagram.png[float=right,width=400]
+image::http://neo4j-labs.github.io/neosemantics/docs/img/nsmntx-block-diagram.png[float=right,width=400]
 
 === Relevant Links
 
 [cols="1,4"]
 |===
 | icon:user[] Authors | https://twitter.com/BarrasaDV[Jesús Barrasa]
-| icon:gift[] Releases | https://github.com/jbarrasa/neosemantics/releases
-| icon:github[] Source | https://github.com/jbarrasa/neosemantics
-| icon:book[] Docs | http://jbarrasa.github.io/neosemantics/
+| icon:gift[] Releases | https://github.com/neo4j-labs/neosemantics/releases
+| icon:github[] Source | https://github.com/neo4j-labs/neosemantics
+| icon:book[] Docs | http://neo4j-labs.github.io/neosemantics/
 // | icon:book[] Article | 
 // | icon:play-circle[] Example |
 |===
