@@ -43,7 +43,7 @@ You can learn more in the https://neo4j.com/developer/neo4j-apoc/[APOC Developer
 
 === Quick Videos
 
-We recorded the https://r.neo4j.com/videos[APOC Video Series^].
+We recorded the https://r.neo4j.com/apoc-videos[APOC Video Series^].
 Here are the latest videos.
 
 ++++
