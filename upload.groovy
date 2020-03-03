@@ -8,7 +8,7 @@ import org.jsoup.nodes.*;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-def success=updatePages("build/docs/html5/",[apoc:99211,"grandstack-graphql":98338,kafka:98345,halin:98347,"etl-tool":98616,"graph-algorithms":98169])
+def success=updatePages("build/docs/html5/",[apoc:99211,"grandstack-graphql":98338,kafka:98345,halin:98347,"etl-tool":98616,"graph-algorithms":98169,"nsmtx-rdf":105456])
 println("Success $success")
 
 def updatePages(directory, pages) {

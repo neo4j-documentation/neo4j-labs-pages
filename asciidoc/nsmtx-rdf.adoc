@@ -1,14 +1,15 @@
 == NSMNTX - Neo4j RDF & Semantics toolkit
-:docs: http://jbarrasa.github.io/neosemantics/
+:img: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
 
 include::header.adoc[]
 
-image::http://jbarrasa.github.io/neosemantics/docs/img/nsmntx-logo.png[float=right,width=500]
+image::{img}/nsmntx-logo.png[float=right,width=500]
 
 NSMNTX is a plugin that enables the **use of RDF in Neo4j**. https://www.w3.org/RDF/[RDF is a W3C standard model] for data interchange. 
 
 You can use it to import existing RDF datasets, build integrations with RDF generating endpoints or easily construct RDF endpoints on Neo4j, and more!
 
+image::{img}/nsmntx-block-diagram.png[float=right,width=200]
 
 === Availability & Installation
 
@@ -24,16 +25,15 @@ There is currently no graph app associated with NSMNTX but we're working on this
 * Ontology Import/Export 
 * Inferencing
 
-image::http://jbarrasa.github.io/neosemantics/docs/img/nsmntx-block-diagram.png[float=right,width=400]
 
 === Relevant Links
 
 [cols="1,4"]
 |===
 | icon:user[] Authors | https://twitter.com/BarrasaDV[Jesús Barrasa]
-| icon:gift[] Releases | https://github.com/jbarrasa/neosemantics/releases
-| icon:github[] Source | https://github.com/jbarrasa/neosemantics
-| icon:book[] Docs | http://jbarrasa.github.io/neosemantics/
+| icon:gift[] Releases | https://github.com/neo4j-labs/neosemantics/releases
+| icon:github[] Source | https://github.com/neo4j-labs/neosemantics
+| icon:book[] Docs | https://neo4j.com/docs/labs/nsmntx/current/
 // | icon:book[] Article | 
 // | icon:play-circle[] Example |
 |===
@@ -41,9 +41,9 @@ image::http://jbarrasa.github.io/neosemantics/docs/img/nsmntx-block-diagram.png[
 === Videos & Tutorials
 
 ++++
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=SvwIqzaoYMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=5wluUfomasg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=OVweE--RJqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="320" height="180" src="https://www.youtube.com/embed/SvwIqzaoYMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="320" height="180" src="https://www.youtube.com/embed/5wluUfomasg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="320" height="180" src="https://www.youtube.com/embed/OVweE--RJqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ++++
 
 === Recent Articles
