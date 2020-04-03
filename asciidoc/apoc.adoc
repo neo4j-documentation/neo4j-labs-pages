@@ -32,13 +32,13 @@ You can learn more in the https://neo4j.com/developer/neo4j-apoc/[APOC Developer
 
 === Documentation
 
-* {docs}/export-import/[Data Import and Export^]
+* {docs}/import[Data Import^] and {docs}/export[Export^]
 * {docs}/database-integration[Integration with other Databases^]
-* {docs}/schema[visual, tabular, structured Schema Information^]
-* {docs}/utilities[Utility functions for conversions, formatting, collections, maps and much more^]
+* {docs}/database-introspection[visual, tabular, structured Schema Information^]
+* {docs}/misc[Utility functions for conversions, formatting, collections, maps and much more^]
 * {docs}/cypher-execution[Dynamic Cypher Execution^]
-* {docs}/nodes-relationships[Dynamically Creating and Updating Nodes and Relationships^]
-* {docs}/path-finding[Advanced Path Finding Procedures^]
+* {docs}/graph-updates/data-creation[Dynamically Creating and Updating Nodes and Relationships^]
+* {docs}/algorithms/path-finding-procedures[Advanced Path Finding Procedures^]
 * {docs}/virtual[Virtual Nodes and Relationships for visualizing aggregation and more^]
 
 === Quick Videos
