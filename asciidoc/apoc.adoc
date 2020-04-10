@@ -1,5 +1,6 @@
 == Neo4j Labs Project: Awesome Procedures On Cypher (APOC)
 :docs: https://neo4j.com/docs/labs/apoc/current
+:slug: apoc
 
 include::header.adoc[]
 

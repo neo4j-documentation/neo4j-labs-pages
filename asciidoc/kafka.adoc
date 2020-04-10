@@ -1,6 +1,7 @@
 == Neo4j Streams Kafka Integration
 :docs: https://neo4j.com/docs/labs/neo4j-streams/current
 :img: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
+:slug: kafka
 
 include::header.adoc[]
 

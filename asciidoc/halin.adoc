@@ -1,5 +1,6 @@
 == Halin - Neo4j Monitoring Tool
 :docs: https://moxious.github.io/halin
+:slug: halin
 
 include::header.adoc[]
 

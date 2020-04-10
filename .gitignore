@@ -1,3 +1,5 @@
+.asciidoctorGems/
+build/
 .gradle
 .DS_Store
 .settings

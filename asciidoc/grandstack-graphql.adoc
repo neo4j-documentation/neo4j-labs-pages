@@ -1,6 +1,7 @@
 == Neo4j GraphQL and GRANDstack
 :docs: https://grandstack.io/docs
 :!figure-caption:
+:slug: grandstack-graphql
 
 include::header.adoc[]
 

@@ -1,5 +1,6 @@
 == Neo4j ETL Tool - Interactive Relational Database Data Import
 :docs: 
+:slug: etl-tool
 
 include::header.adoc[]
 

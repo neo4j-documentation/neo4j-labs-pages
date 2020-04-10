@@ -1,5 +1,6 @@
 == NSMNTX - Neo4j RDF & Semantics toolkit
 :img: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
+:slug: nsmtx-rdf
 
 include::header.adoc[]
 
