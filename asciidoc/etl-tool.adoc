@@ -1,8 +1,9 @@
 = Neo4j ETL Tool - Interactive Relational Database Data Import
 :docs: 
 :slug: etl-tool
+:imagesdir: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
 
-image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/20190606140523/neo4j-etl-tool-icon.jpg[float=right,width=200]
+image::20190606140523/neo4j-etl-tool-icon.jpg[float=right,width=200]
 
 Many people want to import the data from their relational systems into Neo4j.
 The Neo4j ETL tool was developed to make this initial import straightforward.
@@ -14,7 +15,7 @@ You don't need to know Cypher to use this tool, it takes care of all the heavy-l
 
 This allows you to explore datasets that you already know as a graph.
 
-image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/etl11c_save_mapping_next.jpg[]
+image::etl11c_save_mapping_next.jpg[]
 
 == Availability & Installation
 
@@ -37,7 +38,7 @@ It can also be run as a https://neo4j-contrib.github.io/neo4j-etl[command line-t
 * run bulk or online-import
 * bundles MySQL, PostgreSQL, allows custom JDBC driver with Neo4j Enterprise
 
-image::https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads/etl10_mapping_rule3.jpg[]
+image::etl10_mapping_rule3.jpg[]
 
 == Relevant Links
 
