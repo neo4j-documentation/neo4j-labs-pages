@@ -1,11 +1,16 @@
 import org.asciidoctor.gradle.jvm.AsciidoctorTask
+import com.neo4j.gradle.wordpress.WordPressPlugin
+import com.neo4j.gradle.wordpress.WordPressUploadTask
 
 plugins {
     id 'org.asciidoctor.jvm.gems' version '3.1.0' apply false
     id 'org.asciidoctor.jvm.convert' version '3.1.0' apply false
+    // FIXME: use the published version once parent page will be supported
+    //id "com.neo4j.gradle.wordpress.WordPressPlugin" version "0.0.1"
 }
 
 apply plugin: 'org.asciidoctor.jvm.gems'
+apply plugin: WordPressPlugin
 
 repositories {
     mavenCentral()
@@ -13,6 +18,13 @@ repositories {
     ruby {
         gems()
     }
+}
+
+wordpress {
+    username = project.hasProperty('wordpress-username') ? project.property('wordpress-username') : 'neo'
+    password = project.hasProperty('wordpress-password') ? project.property('wordpress-password') : ''
+    host = project.hasProperty('wordpress-host') ? project.property('wordpress-host') : 'localhost'
+    scheme = 'https'
 }
 
 def stage = project.findProperty('stage')
@@ -24,10 +36,13 @@ archivesBaseName = 'neo4j-labs-pages'
 description = """neo4j-labs-pages"""
 
 asciidoctorj {
-    options 'standalone': false
+    requires "${rootProject.projectDir}/resources/extensions.rb"
+    options standalone: false,
+            template_dirs: ["${rootProject.projectDir}/resources/templates"]
     attributes 'apoc-version': "3.5.0.4",
             'icons': 'font',
-            'stage': stage != null ? stage : ''
+            'stage': stage != null ? stage : '',
+            'parent-path': '/labs'
 }
 
 task convertHtml(type: AsciidoctorTask) {
@@ -35,9 +50,22 @@ task convertHtml(type: AsciidoctorTask) {
 
     baseDir file("${projectDir}/asciidoc")
     sourceDir file("${projectDir}/asciidoc")
+    sources {
+        exclude 'footer.adoc'
+    }
     outputDir file("${projectDir}/build")
 }
 
 task convert {
     dependsOn convertHtml
+}
+
+if (stage == 'production' || stage == 'testing') {
+    task wordPressUpload(type: WordPressUploadTask) {
+        dependsOn convertHtml
+        source = convertHtml.outputs.files
+        type = "page"
+        status = "private"
+        template = "page-inner-100-blue.php"
+    }
 }
