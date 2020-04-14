@@ -1,8 +1,6 @@
-== Halin - Neo4j Monitoring Tool
+= Halin - Neo4j Monitoring Tool
 :docs: https://moxious.github.io/halin
 :slug: halin
-
-include::header.adoc[]
 
 image::https://halin.graphapp.io/img/halin-icon.png[float=right,width=200]
 
@@ -12,7 +10,7 @@ You can use it to identify bottlenecks or misconfigurations and to track system 
 
 It's not an automated monitoring solution with alerting and such.
 
-=== Availability & Installation
+== Availability & Installation
 
 Halin runs online in your browser at https://halin.graphapp.io[halin.graphapp.io] and can connect to your local and remote databases.
 
@@ -22,8 +20,7 @@ There are also Docker containers, and you can also clone and run the application
 
 image::https://pbs.twimg.com/media/D8JmEnYXkAAJ5wt.jpg[]
 
-
-=== Functionality Includes
+== Functionality Includes
 
 * Cluster overview
 * Per Machine Monitoring
@@ -36,7 +33,7 @@ image::https://pbs.twimg.com/media/D8JmEnYXkAAJ5wt.jpg[]
 
 image::https://pbs.twimg.com/media/D8JmM2eWwAMMR4i.jpg[]
 
-=== Relevant Links
+== Relevant Links
 
 [cols="1,4"]
 |===
@@ -48,13 +45,13 @@ image::https://pbs.twimg.com/media/D8JmM2eWwAMMR4i.jpg[]
 // | icon:play-circle[] Example |
 |===
 
-=== Videos & Tutorials
+== Videos & Tutorials
 
 ++++
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hKndQ2qF5ts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ++++
 
-=== Recent Articles
+== Recent Articles
 
 * https://medium.com/neo4j/monitoring-neo4j-with-halin-4c11429b46ff[Monitoring Neo4j with Halin	^]
 

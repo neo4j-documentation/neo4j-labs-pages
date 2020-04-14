@@ -1,9 +1,7 @@
-== Neo4j Streams Kafka Integration
+= Neo4j Streams Kafka Integration
 :docs: https://neo4j.com/docs/labs/neo4j-streams/current
 :img: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
 :slug: kafka
-
-include::header.adoc[]
 
 image::{img}/neo4j-loves-confluent.png[width=500]
 
@@ -18,7 +16,7 @@ It will also add *procedures* you can call to send and receive data from Kafka.
 Neo4j Streams has graduated from Neo4j Labs and is now a fully supported component of Neo4j for Enterprise customers.
 ====
 
-=== Availability & Installation			
+== Availability & Installation
 
 You can install the Kafka Connect Neo4j Sink Plugin into Confluent Cloud or your own Connect instance.
 
@@ -30,7 +28,7 @@ community support.
 
 image::{img}/connect-hub-neo4j-sink.png[link="https://www.confluent.io/connector/kafka-connect-neo4j-sink/"]
 
-=== Functionality Includes
+== Functionality Includes
 
 * {docs}/#_kafka_connect[Kafka Connect: Neo4j Source Plugin^] (https://www.confluent.io/connector/kafka-connect-neo4j-sink/[Confluent Hub^])
 * {docs}/#_neo4j_streams_producer[Neo4j Plugin: Change Data Source^]
@@ -40,7 +38,7 @@ image::{img}/connect-hub-neo4j-sink.png[link="https://www.confluent.io/connector
 
 image::{img}/kafka-source-flow.png[link={docs}/#_neo4j_streams_producer, width=800]
 
-=== Relevant Links
+== Relevant Links
 
 [cols="1,4"]
 |===
@@ -59,14 +57,14 @@ image::{img}/kafka-source-flow.png[link={docs}/#_neo4j_streams_producer, width=8
 
 image::{img}/kafka-sink-flow.png[link={docs}/#_neo4j_streams_consumer]
 
-=== Videos & Tutorials
+== Videos & Tutorials
 
 ++++
 <iframe width="320" height="180" src="https://www.youtube.com/embed/ncrART5vDfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="320" height="180" src="https://www.youtube.com/embed/kp6FDGa1QMY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ++++
 
-=== Recent Articles
+== Recent Articles
 
 * https://www.buzzsprout.com/186154/1640956[Confluent Podcast: Connecting to Apache Kafka with Neo4j]
 * https://www.confluent.io/blog/kafka-graph-visualizations[Confluent Blog: Using Graph Processing for Kafka Stream Visualizations]
