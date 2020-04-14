@@ -1,0 +1,2 @@
+require_relative 'extensions/stage_slug_tree_processor'
+require_relative 'extensions/document_info_post_processor'
