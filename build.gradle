@@ -2,8 +2,8 @@ import org.asciidoctor.gradle.jvm.AsciidoctorTask
 import com.neo4j.gradle.wordpress.WordPressUploadTask
 
 plugins {
-    id 'org.asciidoctor.jvm.gems' version '3.1.0' apply false
-    id 'org.asciidoctor.jvm.convert' version '3.1.0' apply false
+    id 'org.asciidoctor.jvm.gems' version '3.2.0' apply false
+    id 'org.asciidoctor.jvm.convert' version '3.2.0' apply false
     id "com.neo4j.gradle.wordpress.WordPressPlugin" version "0.0.2"
 }
 
