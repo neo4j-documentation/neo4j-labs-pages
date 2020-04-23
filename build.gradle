@@ -17,6 +17,10 @@ repositories {
     }
 }
 
+dependencies {
+    asciidoctorGems 'rubygems:neo4j-asciidoctor-extensions:0.0.3'
+}
+
 wordpress {
     username = project.hasProperty('wordpress-username') ? project.property('wordpress-username') : 'neo'
     password = project.hasProperty('wordpress-password') ? project.property('wordpress-password') : ''
@@ -39,7 +43,8 @@ asciidoctorj {
     attributes 'apoc-version': "3.5.0.4",
             'icons': 'font',
             'stage': stage != null ? stage : '',
-            'parent-path': '/labs'
+            'parent-path': '/labs',
+            'document-metadata-attrs-include': 'slug,parent-parent,tags*'
 }
 
 task convertHtml(type: AsciidoctorTask) {

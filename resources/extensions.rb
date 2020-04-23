@@ -1,2 +1,2 @@
 require_relative 'extensions/stage_slug_tree_processor'
-require_relative 'extensions/document_info_post_processor'
+require 'neo4j/asciidoctor/extensions/document_metadata_generator'
