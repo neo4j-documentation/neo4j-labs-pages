@@ -55,7 +55,7 @@ task convertHtml(type: AsciidoctorTask) {
     sources {
         exclude 'footer.adoc'
     }
-    outputDir file("${projectDir}/build")
+    outputDir file("${projectDir}/build/html")
 }
 
 task convert {
