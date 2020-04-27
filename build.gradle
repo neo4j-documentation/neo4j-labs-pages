@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    asciidoctorGems 'rubygems:neo4j-asciidoctor-extensions:0.0.3'
+    asciidoctorGems 'rubygems:neo4j-asciidoctor-extensions:0.0.5'
 }
 
 wordpress {
