@@ -1,7 +1,6 @@
-== Neo4j Labs Project: Awesome Procedures On Cypher (APOC)
+= Awesome Procedures On Cypher (APOC)
 :docs: https://neo4j.com/docs/labs/apoc/current
-
-include::header.adoc[]
+:slug: apoc
 
 ====
 APOC is an add-on library for Neo4j that provides hundreds of procedures and functions adding a lot of useful functionality.
@@ -9,7 +8,7 @@ APOC is an add-on library for Neo4j that provides hundreds of procedures and fun
 The library covers a lot of things, that's why we provide a link:{docs}/overview/[searchable Overview of all APOC functions and procedures^]
 ====
 
-=== Availability & Installation
+== Availability & Installation
 
 It can be installed with a single click in Neo4j Desktop, is available in all Neo4j Sandboxes and in Neo4j Cloud.
 
@@ -17,7 +16,7 @@ Downloading the appropriate release for your Neo4j into the plugins folder adds 
 
 You can learn more in the https://neo4j.com/developer/neo4j-apoc/[APOC Developer Guide^].
 
-=== Relevant Links
+== Relevant Links
 
 [cols="1,4"]
 |===
@@ -30,7 +29,7 @@ You can learn more in the https://neo4j.com/developer/neo4j-apoc/[APOC Developer
 | icon:play-circle[] Example | A `:play apoc` browser guide shows some of the functionality.
 |===
 
-=== Documentation
+== Documentation
 
 * {docs}/import[Data Import^] and {docs}/export[Export^]
 * {docs}/database-integration[Integration with other Databases^]
@@ -41,7 +40,7 @@ You can learn more in the https://neo4j.com/developer/neo4j-apoc/[APOC Developer
 * {docs}/algorithms/path-finding-procedures[Advanced Path Finding Procedures^]
 * {docs}/virtual[Virtual Nodes and Relationships for visualizing aggregation and more^]
 
-=== Quick Videos
+== Quick Videos
 
 We recorded the https://r.neo4j.com/apoc-videos[APOC Video Series^].
 Here are the latest videos.
@@ -54,7 +53,7 @@ Here are the latest videos.
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQPqceydXxc6n9ocJgDur4Ri3bGq8RD2r_e-5-cWrti04v8Icrynf8A9H0XZwfsoAKig8cRrXQ-6T96/embed?start=false&loop=false&delayms=3000" frameborder="0" width="320" height="180" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 ++++
 
-=== Recent Articles
+== Recent Articles
 
 * https://medium.com/neo4j/efficient-neo4j-data-import-using-cypher-scripts-7d1268b0747[Efficient Neo4j Data Import Using Cypher-Scripts by Andrea Santurbano^]
 * https://medium.com/neo4j/streaming-graph-loading-with-neo4j-and-apoc-triggers-188ed4dd40d5[Streaming Graph Loading with Neo4j and APOC Triggers by David Allen^]

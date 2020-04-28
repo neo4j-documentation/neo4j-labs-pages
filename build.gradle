@@ -1,13 +1,34 @@
-import io.github.httpbuilderng.http.HttpTask
-import groovyx.net.http.HttpBuilder
+import org.asciidoctor.gradle.jvm.AsciidoctorTask
+import com.neo4j.gradle.wordpress.WordPressUploadTask
 
 plugins {
-	id "io.github.http-builder-ng.http-plugin" version "0.1.1"
-    id "org.asciidoctor.convert" version "1.5.9.2"
+    id 'org.asciidoctor.jvm.gems' version '3.2.0' apply false
+    id 'org.asciidoctor.jvm.convert' version '3.2.0' apply false
+    id "com.neo4j.gradle.wordpress.WordPressPlugin" version "0.0.4"
 }
-asciidoctorj {
-    version = '1.6.1'
+
+apply plugin: 'org.asciidoctor.jvm.gems'
+
+repositories {
+    mavenCentral()
+    jcenter()
+    ruby {
+        gems()
+    }
 }
+
+dependencies {
+    asciidoctorGems 'rubygems:neo4j-asciidoctor-extensions:0.0.5'
+}
+
+wordpress {
+    username = project.hasProperty('wordpress-username') ? project.property('wordpress-username') : 'neo'
+    password = project.hasProperty('wordpress-password') ? project.property('wordpress-password') : ''
+    host = project.hasProperty('wordpress-host') ? project.property('wordpress-host') : 'localhost'
+    scheme = 'https'
+}
+
+def stage = project.findProperty('stage')
 
 group = 'com.neo4j'
 version = '1.0.0'
@@ -15,66 +36,38 @@ archivesBaseName = 'neo4j-labs-pages'
 
 description = """neo4j-labs-pages"""
 
-asciidoctor {
-    sourceDir = file('asciidoc')
-    sources { include '*.adoc' }
-    outputDir = file('build/docs')
-    attributes 'apoc-version' : "3.5.0.4",
-               icons: 'font'
+asciidoctorj {
+    requires "${rootProject.projectDir}/resources/extensions.rb"
+    options standalone: false,
+            template_dirs: ["${rootProject.projectDir}/resources/templates"]
+    attributes 'apoc-version': "3.5.0.4",
+            'icons': 'font',
+            'stage': stage != null ? stage : '',
+            'parent-path': '/labs',
+            'document-metadata-attrs-include': 'slug,parent-parent,tags*'
 }
 
-asciidoctor.doLast {
-/*
-    copy {
-        from 'build/docs/html5/index.html'
-        into "build/docs"
-        rename { String filename -> filename.replace("index","index34") }
+task convertHtml(type: AsciidoctorTask) {
+    dependsOn asciidoctorGemsPrepare
+
+    baseDir file("${projectDir}/asciidoc")
+    sourceDir file("${projectDir}/asciidoc")
+    sources {
+        exclude 'footer.adoc'
     }
-*/
+    outputDir file("${projectDir}/build/html")
 }
-assemble.dependsOn(asciidoctor)
 
-/*
-def update_wordpress_page(pageId, content) {
-url = 'https://neo4j.com/wp-json/wp/v2/pages/%d' % (pageId)
-auth = b64encode('{}:{}'.format(os.getenv('PUBLISH_DOCS_USERNAME'), os.getenv('PUBLISH_DOCS_PASSWORD')))
-new 
+task convert {
+    dependsOn convertHtml
 }
-def update_wordpress_page(pageId, content):
-    url = 'https://neo4j.com/wp-json/wp/v2/pages/%d' % (pageId)
-    auth = b64encode('{}:{}'.format(os.getenv('PUBLISH_DOCS_USERNAME'), os.getenv('PUBLISH_DOCS_PASSWORD')))
-    headers = {
-        'Accept': 'application/json',
-        'Authorization': 'Basic {}'.format(auth),
-    }
 
-    r = requests.get(url, headers=headers)
-    response = json.loads(r.content)
-
-    # build response for update
-    response['content'] = content
-    headers['Content-Type'] = 'application/json'
-    print url
-    pr = requests.post(url, headers=headers, data=json.dumps(response))
-
-    return pr.content
-
-*/
-// https://http-builder-ng.github.io/gradle-http-plugin/asciidoc/html5/
-task notify(type:HttpTask){
-    config {
-        request.uri = 'http://something.com'
-        request.contentType = 'application/json'
-		request.auth.basic {
-		   user = ''
-		   pass = ''
-		}
-    }
-    post {
-        request.uri.path = '/wp-json/wp/v2/pages/'
-        request.body = [event: 'activated']
-        response.success {
-            println 'The event notification was successful'
-        }
+if (stage == 'production' || stage == 'testing') {
+    task wordPressUpload(type: WordPressUploadTask) {
+        dependsOn convertHtml
+        source = convertHtml.outputs.files
+        type = "page"
+        status = "private"
+        template = "page-inner-100-blue.php"
     }
 }

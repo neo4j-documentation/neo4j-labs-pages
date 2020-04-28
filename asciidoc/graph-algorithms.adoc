@@ -1,4 +1,4 @@
-== Neo4j Graph Algorithms
+= Neo4j Graph Algorithms
 :slug: graph-algorithms
 :level: Intermediate
 :section: Neo4j Graph Platform
@@ -8,80 +8,10 @@
 :toc-title: Contents
 :toclevels: 1
 :docs: https://neo4j.com/docs/graph-algorithms/current/algorithms
-:img: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
-
-include::header.adoc[]
-
-++++
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.column-card {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-.column-card-3 {
-  float: left;
-  width: 33%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding in columns */
-.row-card {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row-card:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-
-  text-align: center;
-  height: 200px;
-}
-
-.card-inner {
-  background-repeat:no-repeat;
-  height: 150px;
-  padding: 16px;
-}
-
-.card-inner img {
-  max-height: 120px;
-}
-
-.card-below {
-    height: 50px;
-    background-color: #efefef;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    padding: 2px;
-    width: 100%;
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column-card, .column-card-3 {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-</style>
-++++
+:imagesdir: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
 
 [#graph-algorithms]
-image:{img}/OReilly-Graph-Algorithms_v2_ol1.jpg[Download your free copy, link="https://neo4j.com/graph-algorithms-book/",role="popup-link",float="right",width="210px", margin-left:"2px"]
+image:OReilly-Graph-Algorithms_v2_ol1.jpg[Download your free copy, link="https://neo4j.com/graph-algorithms-book/",role="popup-link",float="right",width="210px", margin-left:"2px"]
 
 Graph algorithms provide one of the most potent approaches to analyzing connected data because their mathematical calculations are specifically built to operate on relationships.
 They describe steps to be taken to process a graph to discover its general qualities or specific quantities.
@@ -91,7 +21,7 @@ In https://neo4j.com/graph-algorithms-book/[O'Reilly's Graph Algorithms Book^], 
 link:https://neo4j.com/graph-algorithms-book/[Download your free copy^, role="medium button"]
 
 [#neo4j-algorithms-library]
-=== Graph Algorithms Library
+== Graph Algorithms Library
 
 ++++
 <!--div class="responsive-embed"-->
@@ -111,7 +41,7 @@ The library contains implementations for the following types of algorithms:
         <div class="card">
             <div class="card-inner">
                 <a href="{docs}/pathfinding/" target="_blank">
-                    <img src="{img}/Pathfinding-Algo-Icon.png" />
+                    <img src="{imagesdir}/Pathfinding-Algo-Icon.png" />
                 </a>
             </div>
 
@@ -123,7 +53,7 @@ The library contains implementations for the following types of algorithms:
         <div class="card">
             <div class="card-inner">
                 <a href="{docs}/community/" target="_blank">
-                    <img src="{img}/Community-Algo-Icon.png" />
+                    <img src="{imagesdir}/Community-Algo-Icon.png" />
                 </a>
             </div>
             <div class="card-below"><a href="{docs}/community/"
@@ -134,7 +64,7 @@ The library contains implementations for the following types of algorithms:
         <div class="card">
             <div class="card-inner">
                 <a href="{docs}/centrality/" target="_blank">
-                    <img src="{img}/Centrality-Algo-Icon.png" />
+                    <img src="{imagesdir}/Centrality-Algo-Icon.png" />
                 </a>
             </div>
 
@@ -146,7 +76,7 @@ The library contains implementations for the following types of algorithms:
         <div class="card">
             <div class="card-inner">
                 <a href="{docs}/similarity/" target="_blank">
-                    <img src="{img}/Similarity-Algo-Icon.png" />
+                    <img src="{imagesdir}/Similarity-Algo-Icon.png" />
                 </a>
             </div>
 
@@ -170,7 +100,7 @@ The library contains implementations for the following types of algorithms:
 * {docs}/similarity/[Similarity^] - these algorithms help calculate the similarity of nodes
 
 [#start-graph-algorithms]
-=== Getting Started
+== Getting Started
 
 There are several ways to get started with graph algorithms:
 
@@ -181,7 +111,7 @@ There are several ways to get started with graph algorithms:
         <div class="card">
             <div class="card-inner">
                 <a href="https://neo4j.com/sandbox-v2/algos-book" target="_blank">
-                    <img src="{img}/np_sandbox-toys_1207953_3A8BBC.png" />
+                    <img src="{imagesdir}/np_sandbox-toys_1207953_3A8BBC.png" />
                 </a>
             </div>
             <div class="card-below"><a href="https://neo4j.com/sandbox-v2/algos-book"
@@ -192,7 +122,7 @@ There are several ways to get started with graph algorithms:
         <div class="card">
             <div class="card-inner">
                 <a href="https://medium.com/neo4j/introducing-neuler-the-graph-algorithms-playground-d81042cfcd56" target="_blank">
-                    <img src="{img}/np_swing_206_C595E4.png" />
+                    <img src="{imagesdir}/np_swing_206_C595E4.png" />
                 </a>
             </div>
 
@@ -205,7 +135,7 @@ There are several ways to get started with graph algorithms:
             <div class="card">
                 <div class="card-inner">
                     <a href="https://neo4j.com/docs/graph-algorithms/current/" target="_blank">
-                        <img src="{img}/np_documentation_365797_77AE53.png" />
+                        <img src="{imagesdir}/np_documentation_365797_77AE53.png" />
                     </a>
                 </div>
 
@@ -224,7 +154,7 @@ There are several ways to get started with graph algorithms:
 * https://neo4j.com/docs/graph-algorithms/current/[Docs^] - dive straight in with the Neo4j Graph Algorithms Use Guide.
 
 [#graph-algorithms-resources]
-=== Additional Resources
+== Additional Resources
 
 The following are useful resources once you've got a bit of experience with graph algorithms.
 

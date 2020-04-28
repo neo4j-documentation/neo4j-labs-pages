@@ -1,7 +1,0 @@
-++++
-<style type="text/css">
-li p,td p {  margin-bottom: 0px; }
-h2,h3,h4 {  margin-top: 2rem; }
-.right { float: right }
-</style>
-++++
