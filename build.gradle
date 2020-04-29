@@ -67,7 +67,7 @@ if (stage == 'production' || stage == 'testing') {
         dependsOn convertHtml
         source = convertHtml.outputs.files
         type = "page"
-        status = "private"
+        status = stage == 'production' ? "publish" : "private"
         template = "page-inner-100-blue.php"
     }
 }
