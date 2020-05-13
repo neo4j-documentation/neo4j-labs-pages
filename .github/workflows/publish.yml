@@ -15,7 +15,7 @@ jobs:
     - name: Test
       uses: eskatos/gradle-command-action@v1
       with:
-        arguments: wordPressUpload -Pwordpress-host="neo4j.com" -Pwordpress-username="${WORDPRESS_USER}" -Pwordpress-password="${WORDPRESS_PASSWORD}" -Pstage=production --debug
+        arguments: wordPressUpload -Pwordpress-host="neo4j.com" -Pwordpress-username="${WORDPRESS_USER}" -Pwordpress-password="${WORDPRESS_PASSWORD}" -Pstage=production --stacktrace
       env:
         WORDPRESS_USER: ${{ secrets.WORDPRESS_USER }}
         WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}
