@@ -1,5 +1,15 @@
 import org.asciidoctor.gradle.jvm.AsciidoctorTask
 import com.neo4j.gradle.wordpress.WordPressUploadTask
+import okhttp3.*
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.6.0'
+    }
+}
 
 plugins {
     id 'org.asciidoctor.jvm.gems' version '3.2.0' apply false
@@ -63,7 +73,32 @@ task convert {
 }
 
 task checkDNS() {
-    println(InetAddress.getAllByName("neo4j.com"))
+    doLast {
+        println(InetAddress.getAllByName("neo4j.com"))
+    }
+}
+
+task getWordPress {
+    doLast {
+        def client = new OkHttpClient.Builder()
+                .build()
+        def httpUrl = new HttpUrl.Builder()
+                .scheme("https")
+                .host("neo4j.com")
+                .addPathSegment("wp-json")
+                .addPathSegment("wp")
+                .addPathSegment("v2")
+                .addPathSegment("pages")
+                .addQueryParameter("per_page", "10")
+                .addQueryParameter("status", "publish,future,draft,pending,private")
+                .build()
+        def request = new Request.Builder()
+                .url(httpUrl)
+                .get()
+                .build()
+        def response = client.newCall(request).execute()
+        println(response)
+    }
 }
 
 if (stage == 'production' || stage == 'testing') {

@@ -14,6 +14,10 @@ jobs:
       uses: eskatos/gradle-command-action@v1
       with:
         arguments: checkDNS
+    - name: Check DNS
+      uses: eskatos/gradle-command-action@v1
+      with:
+        arguments: getWordPress
     - name: Test
       uses: eskatos/gradle-command-action@v1
       with:
