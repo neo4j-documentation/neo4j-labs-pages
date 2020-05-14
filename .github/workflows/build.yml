@@ -16,9 +16,8 @@ jobs:
         arguments: checkDNS
 
     - name: Get pages (WordPress)
-      uses: eskatos/gradle-command-action@v1
-      with:
-        arguments: getWordPress --info -Pwordpress-host="${WORDPRESS_HOST}" -Pwordpress-username="${WORDPRESS_USER}" -Pwordpress-password="${WORDPRESS_PASSWORD}"
+      run:
+        ./gradlew getWordPress --info -Pwordpress-host="${WORDPRESS_HOST}" -Pwordpress-username="${WORDPRESS_USER}" -Pwordpress-password="${WORDPRESS_PASSWORD}"
       env:
         WORDPRESS_USER: ${{ secrets.WORDPRESS_USER }}
         WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}
