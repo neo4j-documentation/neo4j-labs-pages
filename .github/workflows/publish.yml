@@ -13,17 +13,11 @@ jobs:
       with:
         java-version: 11
 
-    - name: Install traceroute
-      run: sudo apt-get install traceroute curl
+    - name: Install curl
+      run: sudo apt-get install curl
     
     - name: curl
       run: curl neo4j.com
-
-    - name: Traceroute
-      run: traceroute neo4j.com
-
-    - name: Ping
-      run: ping neo4j.com -c 5
 
     - name: Test
       uses: eskatos/gradle-command-action@v1
