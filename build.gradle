@@ -62,6 +62,10 @@ task convert {
     dependsOn convertHtml
 }
 
+task checkDNS() {
+    println(InetAddress.getAllByName("neo4j.com"))
+}
+
 if (stage == 'production' || stage == 'testing') {
     task wordPressUpload(type: WordPressUploadTask) {
         dependsOn convertHtml
