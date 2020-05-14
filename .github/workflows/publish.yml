@@ -14,7 +14,10 @@ jobs:
         java-version: 11
 
     - name: Install traceroute
-      run: sudo apt-get install traceroute
+      run: sudo apt-get install traceroute curl
+    
+    - name: curl
+      run: curl neo4j.com
 
     - name: Traceroute
       run: traceroute neo4j.com
