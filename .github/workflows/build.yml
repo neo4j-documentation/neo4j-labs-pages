@@ -14,10 +14,15 @@ jobs:
       uses: eskatos/gradle-command-action@v1
       with:
         arguments: checkDNS
-    - name: Check DNS
+
+    - name: Get pages (WordPress)
       uses: eskatos/gradle-command-action@v1
       with:
-        arguments: getWordPress
+        arguments: getWordPress -Pwordpress-host="neo4j.com" -Pwordpress-username="${WORDPRESS_USER}" -Pwordpress-password="${WORDPRESS_PASSWORD}"
+      env:
+        WORDPRESS_USER: ${{ secrets.WORDPRESS_USER }}
+        WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}
+
     - name: Test
       uses: eskatos/gradle-command-action@v1
       with:
