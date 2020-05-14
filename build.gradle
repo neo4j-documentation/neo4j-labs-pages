@@ -2,6 +2,9 @@ import org.asciidoctor.gradle.jvm.AsciidoctorTask
 import com.neo4j.gradle.wordpress.WordPressUploadTask
 import okhttp3.*
 
+import java.nio.charset.Charset
+import java.nio.charset.StandardCharsets
+
 buildscript {
     repositories {
         mavenCentral()
@@ -112,7 +115,7 @@ task getWordPress {
                         if (responseCount(response) >= 3) {
                             return null // unable to authenticate for the third time, we give up...
                         }
-                        def credential = Credentials.basic(username, password)
+                        def credential = Credentials.basic(username, password, StandardCharsets.UTF_8)
                         return response.request.newBuilder().header("Authorization", credential).build()
                     }
                 })
@@ -129,7 +132,7 @@ task getWordPress {
                 .build()
         def request = new Request.Builder()
                 .url(httpUrl)
-                .header("Authorization", Credentials.basic(username, password))
+                .header("Authorization", Credentials.basic(username, password, StandardCharsets.UTF_8))
                 .get()
                 .build()
         def response = client.newCall(request).execute()
