@@ -23,6 +23,7 @@ jobs:
         WORDPRESS_USER: ${{ secrets.WORDPRESS_USER }}
         WORDPRESS_PASSWORD: ${{ secrets.WORDPRESS_PASSWORD }}
         WORDPRESS_HOST: "neo4j.com"
+        no_proxy: "neo4j.com"
 
     - name: Test
       uses: eskatos/gradle-command-action@v1
