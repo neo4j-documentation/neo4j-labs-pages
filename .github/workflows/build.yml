@@ -17,7 +17,7 @@ jobs:
 
     - name: Get pages (WordPress)
       run:
-        ./gradlew getWordPress --info -Pwordpress-host='"${WORDPRESS_HOST}"' -Pwordpress-username='"${WORDPRESS_USER}"' -Pwordpress-password='"${WORDPRESS_PASSWORD}"' -Pstage=production --stacktrace
+        ./gradlew getWordPress --info -Pwordpress-host="${WORDPRESS_HOST}" -Pwordpress-username="${WORDPRESS_USER}" -Pwordpress-password="${WORDPRESS_PASSWORD}" -Pstage=production --stacktrace
       env:
         WORDPRESS_USER: "${{ secrets.WORDPRESS_USER }}"
         WORDPRESS_PASSWORD: "${{ secrets.WORDPRESS_PASSWORD }}"
@@ -31,7 +31,7 @@ jobs:
 
     - name: Publish
       run:
-        ./gradlew wordPressUpload -Pwordpress-host="${WORDPRESS_HOST}" -Pwordpress-username="${WORDPRESS_USER}" -Pwordpress-password='"${WORDPRESS_PASSWORD}"' -Pstage=production --stacktrace
+        ./gradlew wordPressUpload -Pwordpress-host="${WORDPRESS_HOST}" -Pwordpress-username="${WORDPRESS_USER}" -Pwordpress-password="${WORDPRESS_PASSWORD}" -Pstage=production --stacktrace
       env:
         WORDPRESS_USER: "${{ secrets.WORDPRESS_USER }}"
         WORDPRESS_PASSWORD: "${{ secrets.WORDPRESS_PASSWORD }}"
