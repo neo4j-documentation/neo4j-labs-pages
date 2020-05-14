@@ -128,7 +128,7 @@ task getWordPress {
                 .addPathSegment("v2")
                 .addPathSegment("pages")
                 .addQueryParameter("per_page", "10")
-                .addQueryParameter("status", "publish,future,draft,pending,private")
+                //.addQueryParameter("status", "publish,future,draft,pending,private")
                 .build()
         def request = new Request.Builder()
                 .url(httpUrl)
