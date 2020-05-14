@@ -93,6 +93,12 @@ task getWordPress {
         def username = project.hasProperty('wordpress-username') ? project.property('wordpress-username') : 'neo'
         def password = project.hasProperty('wordpress-password') ? project.property('wordpress-password') : ''
         def host = project.hasProperty('wordpress-host') ? project.property('wordpress-host') : 'localhost'
+        if (username == 'neo') {
+            println("username is neo")
+        }
+        if (password == '') {
+            println("password is empty :/")
+        }
         def scheme = 'https'
         def client = new OkHttpClient.Builder()
                 .authenticator(new Authenticator() {
