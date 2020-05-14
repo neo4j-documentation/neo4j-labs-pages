@@ -95,15 +95,20 @@ task getWordPress {
         def host = project.hasProperty('wordpress-host') ? project.property('wordpress-host') : 'localhost'
         if (username == 'neo') {
             println("username is neo")
+        } else {
+            println("username is not empty")
         }
         if (password == '') {
             println("password is empty :/")
+        } else {
+            println("password is not empty")
         }
         def scheme = 'https'
         def client = new OkHttpClient.Builder()
                 .authenticator(new Authenticator() {
                     @Override
                     Request authenticate(Route route, Response response) {
+                        println("authenticate: " + response)
                         if (responseCount(response) >= 3) {
                             return null // unable to authenticate for the third time, we give up...
                         }
