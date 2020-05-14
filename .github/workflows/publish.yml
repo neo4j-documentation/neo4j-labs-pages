@@ -13,6 +13,12 @@ jobs:
       with:
         java-version: 11
 
+    - name: Install traceroute
+      run: sudo apt-get install traceroute
+
+    - name: Traceroute
+      run: traceroute neo4j.com
+
     - name: Ping
       run: ping neo4j.com -c 5
 
