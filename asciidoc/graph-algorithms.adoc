@@ -9,6 +9,10 @@
 :toclevels: 1
 :docs: https://neo4j.com/docs/graph-algorithms/current/algorithms
 :imagesdir: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
+:author: Mark Needham
+:category: labs
+:tags: graph algorithms, graph data science, integrations, extensions, machine learning, artificial intelligence
+:neo4j-versions: 3.4, 3.5
 
 [#graph-algorithms]
 image:OReilly-Graph-Algorithms_v2_ol1.jpg[Download your free copy, link="https://neo4j.com/graph-algorithms-book/",role="popup-link",float="right",width="210px", margin-left:"2px"]

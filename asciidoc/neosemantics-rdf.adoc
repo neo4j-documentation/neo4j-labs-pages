@@ -1,6 +1,10 @@
 = NSMNTX - Neo4j RDF & Semantics toolkit
 :imagesdir: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
 :slug: neosemantics-rdf
+:author: Jesús Barrasa
+:category: labs
+:tags: rdf, integrations, extensions, data import, data export, ontology
+:neo4j-versions: 3.5, 4.0
 
 image::nsmntx-logo.png[float=right,width=500]
 

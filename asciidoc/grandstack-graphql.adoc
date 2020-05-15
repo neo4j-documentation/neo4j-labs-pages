@@ -2,6 +2,10 @@
 :docs: https://grandstack.io/docs
 :!figure-caption:
 :slug: grandstack-graphql
+:author: William Lyon, Michael Graham
+:category: labs
+:tags: graphql, grandstack, applications, integrations, fullstack, extensions
+:neo4j-versions: 3.4, 3.5, 4.0
 
 image::https://grandstack.io/img/GrandStack-Logo-SiteIcon-512x512.png[float=right, width=200, position="top"]
 

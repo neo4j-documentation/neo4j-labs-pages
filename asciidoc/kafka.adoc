@@ -2,6 +2,10 @@
 :docs: https://neo4j.com/docs/labs/neo4j-streams/current
 :imagesdir: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
 :slug: kafka
+:author: Michael Hunger, David Allen, Andrea Santurbano, Mauro Roiter
+:category: labs
+:tags: apache kafka, events, extensions, procedures, data stream
+:neo4j-versions: 3.5, 4.0
 
 image::neo4j-loves-confluent.png[width=500]
 
