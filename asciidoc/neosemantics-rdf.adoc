@@ -1,6 +1,6 @@
 = NSMNTX - Neo4j RDF & Semantics toolkit
 :imagesdir: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
-:slug: nsmtx-rdf
+:slug: neosemantics-rdf
 
 image::nsmntx-logo.png[float=right,width=500]
 
