@@ -1,6 +1,10 @@
 = Halin - Neo4j Monitoring Tool
 :docs: https://moxious.github.io/halin
 :slug: halin
+:author: David Allen
+:category: labs
+:tags: monitoring, performance, cluster, integrations, extensions, graph-apps
+:neo4j-versions: 3.5, 4.0
 
 image::https://halin.graphapp.io/img/halin-icon.png[float=right,width=200]
 

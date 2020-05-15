@@ -1,6 +1,10 @@
 = Awesome Procedures On Cypher (APOC)
 :docs: https://neo4j.com/docs/labs/apoc/current
 :slug: apoc
+:author: Michael Hunger
+:category: labs
+:tags: apoc, procedures, functions, utilities, extensions, libraries
+:neo4j-versions: 3.5, 4.0
 
 ====
 APOC is an add-on library for Neo4j that provides hundreds of procedures and functions adding a lot of useful functionality.
