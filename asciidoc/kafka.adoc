@@ -4,7 +4,7 @@
 :slug: kafka
 :author: Michael Hunger, David Allen, Andrea Santurbano, Mauro Roiter
 :category: labs
-:tags: apache kafka, events, extensions, procedures, data stream
+:tags: apache-kafka, events, extensions, procedures, data-stream
 :neo4j-versions: 3.5, 4.0
 
 image::neo4j-loves-confluent.png[width=500]

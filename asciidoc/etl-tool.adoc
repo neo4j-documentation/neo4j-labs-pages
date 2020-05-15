@@ -4,7 +4,7 @@
 :imagesdir: https://s3.amazonaws.com/dev.assets.neo4j.com/wp-content/uploads
 :author: Michael Hunger, Larus BA
 :category: labs
-:tags: etl, import, relational database, relational graph, graph apps
+:tags: etl, import, relational-database, relational-graph, graph-apps
 :neo4j-versions: 3.5, 4.0
 
 image::20190606140523/neo4j-etl-tool-icon.jpg[float=right,width=200]

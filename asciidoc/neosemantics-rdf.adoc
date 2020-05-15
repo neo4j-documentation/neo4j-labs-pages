@@ -3,7 +3,7 @@
 :slug: neosemantics-rdf
 :author: Jesús Barrasa
 :category: labs
-:tags: rdf, integrations, extensions, data import, data export, ontology
+:tags: rdf, integrations, extensions, data-import, data-export, ontologies
 :neo4j-versions: 3.5, 4.0
 
 image::nsmntx-logo.png[float=right,width=500]
