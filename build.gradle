@@ -4,7 +4,7 @@ import com.neo4j.gradle.wordpress.WordPressUploadTask
 plugins {
     id 'org.asciidoctor.jvm.gems' version '3.2.0' apply false
     id 'org.asciidoctor.jvm.convert' version '3.2.0' apply false
-    id "com.neo4j.gradle.wordpress.WordPressPlugin" version "0.1.0"
+    id "com.neo4j.gradle.wordpress.WordPressPlugin" version "0.2.0"
 }
 
 apply plugin: 'org.asciidoctor.jvm.gems'
@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    asciidoctorGems 'rubygems:neo4j-asciidoctor-extensions:0.0.5'
+    asciidoctorGems 'rubygems:neo4j-asciidoctor-extensions:0.1.1'
 }
 
 wordpress {
@@ -44,7 +44,7 @@ asciidoctorj {
             'icons': 'font',
             'stage': stage != null ? stage : '',
             'parent-path': '/labs',
-            'document-metadata-attrs-include': 'slug,parent-parent,tags*'
+            'document-metadata-attrs-include': 'slug,parent-path,excerpt,featured-media,tags*'
 }
 
 task convertHtml(type: AsciidoctorTask) {
