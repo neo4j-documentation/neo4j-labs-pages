@@ -45,7 +45,7 @@ The n10s GraphApp will help you get started with neosemantics
 == Videos & Tutorials
 
 ++++
-<iframe width="320" height="180" src="https://www.youtube.com/watch?v=LO-OvQaBq8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="320" height="180" src="https://www.youtube.com/embed/LO-OvQaBq8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="320" height="180" src="https://www.youtube.com/embed/SvwIqzaoYMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="320" height="180" src="https://www.youtube.com/embed/5wluUfomasg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="320" height="180" src="https://www.youtube.com/embed/OVweE--RJqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
