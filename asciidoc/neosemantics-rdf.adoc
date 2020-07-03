@@ -46,9 +46,16 @@ The n10s GraphApp will help you get started with neosemantics
 
 ++++
 <iframe width="320" height="180" src="https://www.youtube.com/embed/LO-OvQaBq8s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="320" height="180" src="https://www.youtube.com/embed/SvwIqzaoYMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <iframe width="320" height="180" src="https://www.youtube.com/embed/5wluUfomasg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="320" height="180" src="https://www.youtube.com/embed/tDPK4CTamKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="320" height="180" src="https://www.youtube.com/embed/vs7tYqnrBZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <iframe width="320" height="180" src="https://www.youtube.com/embed/OVweE--RJqM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="320" height="180" src="https://www.youtube.com/embed/SvwIqzaoYMo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 ++++
 
 == Recent Articles
